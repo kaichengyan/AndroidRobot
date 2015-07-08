@@ -1,7 +1,3 @@
-float dx1,dy1;
-float dx2,dy2;
-float easing = 0.05;
-
 void setup(){
   size(200,200);
   background(51);
@@ -28,8 +24,8 @@ void draw(){
     ellipse(mouseX, mouseY, 5, 5);
   }else{
     float distance1 = sqrt((mouseX-72)*(mouseX-72) + (mouseY-45)*(mouseY-45));
-    dx1 = (mouseX - 72) * 5 / distance1;
-    dy1 = (mouseY - 45) * 5 / distance1;
+    float dx1 = (mouseX - 72) * 5 / distance1;
+    float dy1 = (mouseY - 45) * 5 / distance1;
     ellipse(72+dx1, 45+dy1, 5, 5);
   }
   
@@ -37,8 +33,8 @@ void draw(){
     ellipse(mouseX, mouseY, 5, 5);
   }else{
     float distance2 = sqrt((mouseX-127)*(mouseX-127) + (mouseY-45)*(mouseY-45));
-    dx2 = (mouseX - 127) * 5 / distance2;
-    dy2 = (mouseY - 45) * 5 / distance2;
+    float dx2 = (mouseX - 127) * 5 / distance2;
+    float dy2 = (mouseY - 45) * 5 / distance2;
     ellipse(127+dx2, 45+dy2, 5, 5);
   }
   
