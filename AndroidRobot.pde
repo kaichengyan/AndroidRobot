@@ -1,10 +1,10 @@
 void setup(){
-  size(200,200);
+  size(255,255);
   background(51);
   noStroke();
 }
 void draw(){
-  fill(75,192,55);
+  fill(mouseY, mouseX, mouseX/2+ mouseY/2 );
   ellipseMode(CENTER);
   ellipse(100,50,100,50);
   rect(50,60,100,80);
