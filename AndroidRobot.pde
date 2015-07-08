@@ -4,7 +4,7 @@ void setup(){
   noStroke();
 }
 void draw(){
-  fill(mouseY, mouseX, mouseX/2+ mouseY/2 );
+  fill(mouseY/2+64, mouseX/2+64, mouseX/2+ mouseY/2 +64);
   ellipseMode(CENTER);
   ellipse(100,50,100,50);
   rect(50,60,100,80);
